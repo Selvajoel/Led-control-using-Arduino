@@ -1,3 +1,5 @@
+### NAME :SELVA JOEL S
+### REG NO :212222220040
 # Led-control-using-Arduino
 
 ## AIM
@@ -59,8 +61,39 @@ Weighing Machines </br>
 
 ## CIRCUIT DIAGRAM
 
-## PROGRAM
+![308435540-b8d7ff84-f6db-4d23-b038-49b2503bec0b](https://github.com/Selvajoel/Led-control-using-Arduino/assets/122252838/4ebee23a-5f4d-4683-a3c5-005ad8230885)
 
+## PROGRAM
+```
+const int buttonPin=2;
+const int ledPin=13;
+int buttonState=0;
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(ledPin,OUTPUT);
+  pinMode(buttonPin,INPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  buttonState = digitalRead(buttonPin);
+  if(buttonState==HIGH)
+  {
+    digitalWrite(ledPin,HIGH);
+  }
+  else 
+  {
+    digitalWrite(ledPin,LOW);
+  }
+}
+```
 ## OUTPUT
+## LED OFF :
+![308435845-2f9511fc-d617-46b3-856c-057eddefe6e7](https://github.com/Selvajoel/Led-control-using-Arduino/assets/122252838/5923d46e-8e28-4853-afbe-cf387e27f2d2)
+
+## LED ON :
+
+![308436044-2001555b-5869-4f72-b546-abcb5d3936a6](https://github.com/Selvajoel/Led-control-using-Arduino/assets/122252838/83af5456-8a7b-4965-9254-05938effef96)
 
 ## RESULT
+Thus to design and implement a system for LED control using an Arduino microcontroller and a push button is successfully executed
